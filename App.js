@@ -1,19 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Map</Text>
-    </View>
-  );
+import Map from './screens/Map';
+
+export default class App extends React.Component {
+  render(){
+    return(
+      <Map/>
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
